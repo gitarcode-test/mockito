@@ -83,11 +83,9 @@ class MethodHandleProxy implements ProxyRealMethod {
             this.handle = handle;
             this.args = args;
         }
-
-        @Override
-        public boolean isInvokable() {
-            return true;
-        }
+    @Override
+        public boolean isInvokable() { return true; }
+        
 
         @Override
         public Object invoke() throws Throwable {
