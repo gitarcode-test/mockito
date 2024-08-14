@@ -60,11 +60,9 @@ class SubclassInjectionLoader implements SubclassLoader {
     }
 
     private static class WithReflection implements SubclassLoader {
-
-        @Override
-        public boolean isDisrespectingOpenness() {
-            return true;
-        }
+    @Override
+        public boolean isDisrespectingOpenness() { return true; }
+        
 
         @Override
         public ClassLoadingStrategy<ClassLoader> resolveStrategy(
